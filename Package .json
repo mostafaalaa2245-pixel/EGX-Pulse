@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EGX Smart Tracker</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial; background: #0d1117; color: #e6edf3; text-align: center; }
+      .stock { background: #161b22; margin: 10px; padding: 15px; border-radius: 10px; display: inline-block; }
+    </style>
+  </head>
+  <body>
+    <h1>📈 EGX Smart Tracker</h1>
+    <div id="stocks"></div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+      const socket = io("http://localhost:4000");
+      socket.on("stocks", (data) => {
+        document.getElementById("stocks").innerHTML = data.map(s => `
+          <div class="stock">
+            <strong>${s.symbol}</strong><br/>💵 ${s.price}
+          </div>
+        `).join("");
+      });
+    </script>
+  </body>
+</html>

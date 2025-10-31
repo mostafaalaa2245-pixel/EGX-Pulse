@@ -1,0 +1,22 @@
+{
+  "name": "egx-smart-tracker",
+  "version": "1.0.0",
+  "description": "موقع متكامل لمتابعة البورصة المصرية",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "dev": "echo 'يرجى تشغيل الخادم والواجهة في نافذتين منفصلتين' && echo 'نافذة 1: npm run server' && echo 'نافذة 2: npm run client'"
+  },
+  "keywords": [
+    "stock-market",
+    "egypt",
+    "egx",
+    "trading",
+    "real-time",
+    "websocket"
+  ],
+  "author": "EGX Smart Tracker Team",
+  "license": "MIT"
+}

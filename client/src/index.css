@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+  color: #1f2937;
+}
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #1890ff;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.btn-primary:hover {
+  background-color: #096dd9;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.btn-success:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #1890ff;
+}
